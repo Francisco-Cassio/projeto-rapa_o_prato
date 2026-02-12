@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Nordhin Regular";
+  src: url("../fonts/Nordhin.ttf") format("truetype");
+
+  font-family: "Epiloque Regular";
+  src: url("../fonts/Epilogue-Regular.ttf") format("truetype");
+
+  font-family: "Aboreto Regular";
+  src: url("../fonts/Aboreto-Regular.ttf") format("truetype");
+
+  font-family: "Syne";
+  src: url("../fonts/Syne-VariableFont_wght.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+#logo-texto {
+  font-family: "Nordhin Regular";
+  font-size: 26px;
+  margin: 0;
+  color: white;
+}
+
+ul#navegacao {
+  font-family: "Epiloque Regular";
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0 0 0 30%;
+  padding: 0;
+}
+
+ul#navegacao li {
+  margin: 0;
+}
+
+ul#navegacao a {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+ul#navegacao a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+nav {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #b5553a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+
+#campo-logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo-texto {
+  font-family: "Nordhin Regular";
+  font-size: 28px;
+  margin: 0;
+}
+
+#bem-vindo {
+  background: url(../images/fundo-bem-vindo.png);
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+}
+
+#bem-vindo-texto {
+  font-family: "Aboreto Regular";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b5553a;
+  color: white;
+  width: 600px;
+  height: 450px;
+  margin: 6% auto;
+  text-align: center;
+  padding: 100px;
+  box-sizing: border-box;
+  gap: 40px;
+}
+
+#bem-vindo-title {
+  font-size: 50px;
+}
+
+#bem-vindo-paragrafo {
+  font-family: "Syne";
+  line-height: 3vh;
+}
+
+#botao-explorar {
+  background-color: white;
+  color: #b5553a;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#botao-explorar:hover {
+  background-color: #b5553a;
+  color: white;
+  border: 1px solid white;
+}
