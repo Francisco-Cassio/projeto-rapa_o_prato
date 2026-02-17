@@ -1,18 +1,31 @@
 @font-face {
   font-family: "Nordhin Regular";
   src: url("../fonts/Nordhin.ttf") format("truetype");
+}
 
-  font-family: "Epiloque Regular";
-  src: url("../fonts/Epilogue-Regular.ttf") format("truetype");
-
+@font-face {
   font-family: "Aboreto Regular";
   src: url("../fonts/Aboreto-Regular.ttf") format("truetype");
+}
 
+@font-face {
   font-family: "Syne";
   src: url("../fonts/Syne-VariableFont_wght.ttf") format("truetype");
+}
 
+@font-face {
+  font-family: "Epilogue Regular";
+  src: url("../fonts/Epilogue-Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "American Typewrite";
   src: url("../fonts/AmericanTypewriterStd-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir LT 35 Light";
+  src: url("../fonts/AvenirLTProLight.otf") format("opentype");
 }
 
 * {
@@ -27,7 +40,8 @@
 }
 
 #logo-texto {
-  font-family: "Nordhin Regular";
+  font-family: "Nordhin Regular", "Times New Roman", serif;
+  font-weight: 100;
   font-size: 26px;
   margin: 0;
   color: white;
@@ -42,8 +56,8 @@ ul#navegacao {
 }
 
 ul#navegacao li {
-  font-family: "Epiloque Regular";
-  font-size: 2.5vh;
+  font-family: "Epilogue Regular", Arial, sans-serif;
+  font-size: 2.2vh;
   margin: 0;
 }
 
@@ -75,13 +89,7 @@ nav {
   align-items: center;
 }
 
-#logo-texto {
-  font-family: "Nordhin Regular";
-  font-size: 28px;
-  margin: 0;
-}
-
-#bem-vindo {
+#bem-vindo-bloco {
   background: url("../images/fundo-bem-vindo.png");
   display: flex;
   background-repeat: no-repeat;
@@ -91,7 +99,7 @@ nav {
 }
 
 #bem-vindo-texto {
-  font-family: "Aboreto Regular";
+  font-family: "Aboreto Regular", Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,30 +107,34 @@ nav {
   background-color: #b5553a;
   color: white;
   width: 600px;
-  height: 450px;
+  height: 30rem;
   margin: auto;
   text-align: center;
-  padding: 100px;
   box-sizing: border-box;
   gap: 40px;
 }
 
-#bem-vindo-title {
-  font-size: 50px;
+#bem-vindo-texto h1 {
+  font-size: 8vh;
+  font-weight: 100;
+  padding: 0 10%;
 }
 
-#bem-vindo-paragrafo {
-  font-family: "Syne";
-  line-height: 3vh;
+#bem-vindo-texto p {
+  font-family: "Syne", Arial, sans-serif;
+  line-height: 4vh;
+  padding: 0 17%;
 }
 
 #botao-explorar {
+  font-family: "Avenir LT 35 Light", Arial, sans-serif;
   background-color: white;
   color: #b5553a;
   border: 2px solid white;
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 2vh;
   cursor: pointer;
+  transition: transform 0.2s;
 }
 
 #botao-explorar:hover {
@@ -144,9 +156,10 @@ nav {
   gap: 50px;
 }
 
-#proposito-title {
+#bloco-proposito h1 {
   color: white;
-  font-family: "American Typewrite";
+  font-family: "American Typewrite", "Segoe UI", sans-serif;
+  font-weight: 100;
 }
 
 #imagem-comidas-lata {
@@ -156,7 +169,7 @@ nav {
   z-index: 1;
 }
 
-#proposito-title,
+#bloco-proposito h1,
 #imagem-comidas-lata {
   margin-right: 20vh;
 }
@@ -182,17 +195,18 @@ nav {
   height: auto;
 }
 
-#mensagem-proposito-title {
+#mensagem-proposito h1 {
   flex: 1;
-  font-family: "American Typewrite";
+  font-family: "American Typewrite", "Segoe UI", sans-serif;
+  font-weight: 100;
   font-size: 5vh;
   margin: 0 auto;
 }
 
-#mensagem-proposito-texto {
+#mensagem-proposito p {
   flex: 2;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-family: "Epilogue Regular", Arial, sans-serif;
+  font-size: 1rem;
   padding-left: 6rem;
   line-height: 1.6;
   text-align: justify;
@@ -207,8 +221,9 @@ nav {
   padding: 80px;
 }
 
-#quem-somos-title {
-  font-family: "American Typewrite";
+#quem-somos h1 {
+  font-family: "American Typewrite", "Segoe UI", sans-serif;
+  font-weight: 100;
   font-size: 7vh;
   margin-bottom: 5vh;
   padding: 0 68vh;
@@ -217,9 +232,9 @@ nav {
 }
 
 #quem-somos-texto {
-  font-size: 2.6vh;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 20px 53vh;
+  font-size: 2.4vh;
+  font-family: "Epilogue Regular", Arial, sans-serif;
+  padding: 20px 52vh;
   text-align: center;
   line-height: 2rem;
 }
@@ -251,14 +266,15 @@ nav {
 }
 
 .informaçoes-fotos {
-  font-family: Arial, sans-serif;
-  padding: 0 30px;
+  font-family: "Epilogue Regular", Arial, sans-serif;
+  padding: 0 5vh;
   text-align: justify;
-  font-size: 1.1rem;
+  font-size: 2.3vh;
 }
 
-.paragrafo-inf {
+.informaçoes-fotos p {
   margin-top: 50px;
+  line-height: 3vh;
 }
 
 .links {
