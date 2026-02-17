@@ -23,8 +23,7 @@
 
 #logo {
   width: 60px;
-  height: auto;
-  object-fit: contain;
+  margin-right: 1rem;
 }
 
 #logo-texto {
@@ -264,13 +263,17 @@ nav {
 
 .links {
   display: flex;
-  gap: 1vh;
   width: 85%;
   padding: 0.5rem 0;
+  gap: 0.5rem;
 }
 
 .links img {
-  background-color: white;
-  border-radius: 100%;
-  padding: 2%;
+  width: 1.6rem;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.links a:hover img {
+  transform: scale(1.1);
 }
