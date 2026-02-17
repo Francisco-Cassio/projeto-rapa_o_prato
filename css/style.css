@@ -34,6 +34,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #logo {
   width: 60px;
   margin-right: 1rem;
@@ -51,7 +55,7 @@ ul#navegacao {
   list-style: none;
   display: flex;
   gap: 10px;
-  margin: 0 0 0 25%;
+  margin: 0 0 0 20%;
   padding: 0;
 }
 
@@ -237,6 +241,11 @@ nav {
   padding: 20px 52vh;
   text-align: center;
   line-height: 2rem;
+}
+
+#proposito,
+#quem-somos {
+  scroll-margin-top: 100px;
 }
 
 #fotos {
