@@ -6,13 +6,12 @@ O **Rapa o Prato** é uma página web institucional desenvolvida como um projeto
 
 ---
 
-## 🚀 Detalhes do Projeto
-
-- **Foco em Interface:** Desenvolvido principalmente para testar a estrutura visual, o alinhamento de elementos e a experiência do usuário (UX/UI).
-- **Navegação Fluida (Smooth Scroll):** Menu funcional que leva o usuário até as seções da página com transições suaves desenvolvidas em JavaScript.
-- **Quem Somos:** Apresentação dos desenvolvedores com links diretos para as suas redes profissionais (GitHub, LinkedIn e Instagram).
+## 🔗 Link do GitHub Pages
+O projeto publicado pode ser acessado diretamente através do link:
+👉 [Página do GitHub Pages](https://francisco-cassio.github.io/projeto-rapa_o_prato/)
 
 ---
+
 
 ## 🛠️ Tecnologias Utilizadas
 
