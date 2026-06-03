@@ -304,6 +304,12 @@ nav {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 950px) {
+    ul#navegacao li{
+      font-size: 1.8vh;
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -312,9 +318,7 @@ nav {
   }
 
   ul#navegacao {
-    margin: 0;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
   }
 
   #bem-vindo-texto h1 {
